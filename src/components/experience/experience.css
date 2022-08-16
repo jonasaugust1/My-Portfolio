@@ -44,6 +44,13 @@
     color: var(--color-primary)
 }
 
+@media screen and (max-width: 1280px){
+    #experience {
+        margin-top: 8%;
+    }
+}
+
+
 /* MEDIA QUERY (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .experience__container {
@@ -58,6 +65,12 @@
 
     .experience__content {
         padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 1280px){
+    #contact {
+        margin-top: 4%;
     }
 }
 

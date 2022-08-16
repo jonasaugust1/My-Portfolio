@@ -52,6 +52,11 @@ footer a {
     color: var(--color-bg);
 }
 
+@media screen and (max-width: 1280px){
+    footer {
+        margin-top: -5%;
+    }
+}
 
 /* MEDIA QUERY (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
