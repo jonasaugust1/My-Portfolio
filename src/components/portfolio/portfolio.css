@@ -39,6 +39,7 @@
     background: var(--color-primary);
 }
 
+/* MEDIA QUERY  */
 @media screen and (max-width: 1280px){
     #portfolio {
         margin-top: -20%;
@@ -57,7 +58,25 @@
     }
 }
 
+@media screen and (max-width: 770px) {
+    #portfolio {
+        margin-top: 5%;
+    }
+}
+
 /* MEDIA QUERY (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    #portfolio {
+        margin-top: 30%;
+    }
+
+    .portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+
 @media screen and (max-width: 600px) {
     #portfolio {
         margin-top: 30%;
@@ -71,7 +90,7 @@
 
 @media screen and (max-width: 480px) {
     #portfolio {
-        margin-top: 40%;
+        margin-top: 20%;
     }
 }
 
@@ -80,3 +99,4 @@
         margin-top: 80%;
     }
 }
+

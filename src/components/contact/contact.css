@@ -57,6 +57,7 @@ input, textarea {
     color: var(--color-white);
 }
 
+/* MEDIA QUERY */
 @media screen and (max-width: 1280px){
     #contact {
         margin-top: 4%;
@@ -73,6 +74,12 @@ input, textarea {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+}
+
+@media screen and (max-width: 770px) {
+    #contact {
+        margin-top: -30%;
+    }
 }
 
 /* MEDIA QUERY (SMALL DEVICES) */
