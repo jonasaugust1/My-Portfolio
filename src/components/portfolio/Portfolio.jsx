@@ -4,6 +4,10 @@ import FM from '../../assets/findmovies.png'
 import JM from '../../assets/jammming.png'
 import PL from '../../assets/petlover.png'
 import FC from '../../assets/flashcards.png'
+import { Pagination, Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const data = [
   {
@@ -42,11 +46,17 @@ const Portfolio = () => {
       <h5>Meus Trabalhos Recentes</h5>
       <h2>Portfolio</h2>
 
-      <div className='container portfolio__container'>
+      <Swiper className='container portfolio__container'
+        modules={[Pagination, Navigation]}
+        spaceBetween={40}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
         {
           data.map(({id, image, title, github, demo}) => {
             return(
-              <article key={id} className='portfolio__item'>
+              <SwiperSlide key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
                   <img src={image} alt={title} />
                 </div>
@@ -55,11 +65,11 @@ const Portfolio = () => {
                   <a href={github} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
                   <a href={demo} target='_blank' rel='noreferrer' className='btn btn-primary'>Live Demo</a>
                 </div>
-              </article>
+              </SwiperSlide>
             )
           })
         }
-      </div>
+      </Swiper>
     </section>
   )
 }
