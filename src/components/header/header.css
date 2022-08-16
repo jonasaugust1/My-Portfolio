@@ -10,6 +10,11 @@ header {
     position: relative;
 }
 
+.typewriter {
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
 /* CTA */
 .cta {
     margin-top: 2.5rem;
@@ -49,6 +54,11 @@ header {
     padding: 5rem 1.5rem 1.5rem 1.5rem;
 }
 
+.me img {
+    border-radius: 20%;
+    height: 80%;
+}
+
 /* SCROLL DOWN */
 .scroll__down {
     position: absolute;
@@ -74,5 +84,16 @@ header {
 
     .header__social, .scroll__down {
         display: none;
+    }
+
+    .typewriter {
+        font-size: 1.1rem;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    .typewriter {
+        font-size: 1rem;
     }
 }

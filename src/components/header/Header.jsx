@@ -1,21 +1,31 @@
 import React from 'react'
 import CTA from './CTA'
-import ME from '../../assets/me.png'
+import FS from '../../assets/fullstack.png'
 import HeaderSocial from './HeaderSocial'
 import './header.css'
+import TypeWriter from 'typewriter-effect'
 
 const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Olá me chamo</h5>
-        <h1>Jonas Araujo</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <div className='typewriter'>
+          <TypeWriter onInit={(typewriter) => {
+            typewriter.typeString("Olá, me chamo Jonas Augusto")
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString("Fullstack Developer")
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString("Jonas Augusto (Fullstack Developer)")
+            .start()
+          }} />
+        </div>
         <CTA />
         <HeaderSocial />
         
         <div className='me'>
-          <img src={ME} alt="Eu" />
+          <img src={FS} alt="Eu" />
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>
