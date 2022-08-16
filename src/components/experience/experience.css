@@ -83,3 +83,15 @@
         margin-top: 195%;
     }    
 }
+
+@media screen and (max-width: 480px) {
+    #experience {
+        margin-top: 170%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    #experience {
+        margin-top: 195%;
+    }
+}
