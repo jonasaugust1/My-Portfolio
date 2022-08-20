@@ -1,6 +1,6 @@
 import React from 'react'
 import CTA from './CTA'
-import FS from '../../assets/fullstack.png'
+import FS from '../../assets/fullstack.webp'
 import HeaderSocial from './HeaderSocial'
 import './header.css'
 import TypeWriter from 'typewriter-effect'

@@ -1,9 +1,9 @@
 import React from 'react'
 import './portfolio.css'
-import FM from '../../assets/findmovies.png'
-import JM from '../../assets/jammming.png'
-import PL from '../../assets/petlover.png'
-import FC from '../../assets/flashcards.png'
+import FM from '../../assets/findmovies.webp'
+import JM from '../../assets/jammming.webp'
+import PL from '../../assets/petlover.webp'
+import FC from '../../assets/flashcards.webp'
 import { Pagination, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
