@@ -4,7 +4,7 @@ import App from './App';
 import './index.css'
 import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context'
-
+import {token} from './config'
 
 
 
@@ -19,7 +19,7 @@ export async function getStaticProps() {
         return {
             headers: {
                 ...headers,
-                authorization: `Bearer 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`,
+                authorization: `Bearer ${token}`,
             }
         }
     });

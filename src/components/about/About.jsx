@@ -46,7 +46,7 @@ const About = () => {
             <br />He is a knowledge-loving person, enjoys new challenges, learning new subjects, studying languages, getting to know new cultures and actively seeking to positively impact society as a whole.
           </p>
 
-          <a href="#contact" className='btn btn-primary'>Entre em Contato</a>
+          <a href="#contact" className='btn btn-primary'>Get in touch</a>
         </div>
       </div>
     </section>
