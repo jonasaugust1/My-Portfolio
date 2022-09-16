@@ -11,11 +11,14 @@ const Header = () => {
       <div className="container header__container">
         <div className='typewriter'>
           <TypeWriter onInit={(typewriter) => {
-            typewriter.typeString("Olá, me chamo Jonas Augusto")
-            .pauseFor(2000)
+            typewriter.typeString("Hello, my name is Jonas Augusto")
+            .pauseFor(1000)
             .deleteAll()
-            .typeString("Fullstack Developer")
-            .pauseFor(2000)
+            .typeString("I am a Fullstack Developer")
+            .pauseFor(1000)
+            .deleteAll()
+            .typeString("Nice to meet you!")
+            .pauseFor(1000)
             .deleteAll()
             .typeString("Jonas Augusto (Fullstack Developer)")
             .start()
