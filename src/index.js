@@ -4,10 +4,8 @@ import App from './App';
 import './index.css'
 import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context'
-import {token} from './config'
 
-
-
+console.log(process.env.REACT_APP_GITHUB_ACCES_TOKEN)
 ReactDOM.render(<App />, document.getElementById("root"))
 
 export async function getStaticProps() {
@@ -19,7 +17,7 @@ export async function getStaticProps() {
         return {
             headers: {
                 ...headers,
-                authorization: `Bearer ${token}`,
+                authorization: `Bearer ${process.env.REACT_APP_GITHUB_ACCES_TOKEN}`,
             }
         }
     });
