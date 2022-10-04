@@ -1,8 +1,8 @@
 import './contact.css';
-import {MdEmail} from 'react-icons/md'
-import {IoLogoWhatsapp} from 'react-icons/io'
-import React, { useRef } from 'react'
-import emailjs from 'emailjs-com'
+import {MdEmail} from 'react-icons/md';
+import {IoLogoWhatsapp} from 'react-icons/io';
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
 
@@ -13,13 +13,13 @@ const Contact = () => {
 
     emailjs.sendForm('service_3w0y6eg', 'template_z6zzg04', form.current, 'v0PBVciYEmTwfVbn1')
       .then((result) => {
-          console.log(result.text);
+        console.log(result.text);
       }, (error) => {
-          console.log(error.text);
+        console.log(error.text);
       });
 
-      e.target.reset()
-      alert("Menssagem enviada!")
+    e.target.reset();
+    alert('Menssagem enviada!');
   };
 
   return (
@@ -52,7 +52,7 @@ const Contact = () => {
         </form>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,8 +1,8 @@
-import React from 'react'
-import './footer.css'
-import {BsLinkedin} from 'react-icons/bs'
-import {BsGithub} from 'react-icons/bs'
-import {RiInstagramFill} from 'react-icons/ri'
+import React from 'react';
+import './footer.css';
+import {BsLinkedin} from 'react-icons/bs';
+import {BsGithub} from 'react-icons/bs';
+import {RiInstagramFill} from 'react-icons/ri';
 
 const Footer = () => {
   return (
@@ -27,7 +27,7 @@ const Footer = () => {
         <small>&copy; Jonas Augusto. All rights reserved</small>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

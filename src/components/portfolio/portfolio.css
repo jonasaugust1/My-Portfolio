@@ -11,7 +11,14 @@
     background: transparent;
 }
 
-.portfolio__item-image {
+.portfolio__item-language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.2rem;
+    width: 12%;
+    color: rgb(10, 9, 9);
+    padding: 0.5rem;
     border-radius: 1.5rem;
     overflow: hidden;
 }
@@ -29,5 +36,19 @@
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
     background: var(--color-primary);
+}
+
+/* MEDIA QUERY (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+    .portfolio__item-language{
+        width: 22%;
+    }
+}
+
+/* MEDIA QUERY (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    .portfolio__item-language {
+        width: 34%;
+    }
 }
 

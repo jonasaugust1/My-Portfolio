@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 import './about.css';
-import ME from '../../assets/profilepic.png'
-import { FaAward } from 'react-icons/fa'
-import { MdWork } from 'react-icons/md'
-import { BsFillFolderFill } from 'react-icons/bs'
+import ME from '../../assets/profilepic.png';
+import { FaAward } from 'react-icons/fa';
+import { MdWork } from 'react-icons/md';
+import { BsFillFolderFill } from 'react-icons/bs';
 
 const About = () => {
   return (
@@ -40,9 +40,9 @@ const About = () => {
           </div>
 
           <p>
-            Jonas is passionate about programming and technology, because of the full range of opportunities to make things happen and for positively impacting society.
+                        Jonas is passionate about programming and technology, because of the full range of opportunities to make things happen and for positively impacting society.
             <br />He joined the Software Engineering course at UniCV and is specializing in Backend at Gama Academy.
-            Jonas is a language lover and is fluent in English and French, studying Italian and Japanese.
+                        Jonas is a language lover and is fluent in English and French, studying Italian and Japanese.
             <br />He is a knowledge-loving person, enjoys new challenges, learning new subjects, studying languages, getting to know new cultures and actively seeking to positively impact society as a whole.
           </p>
 
@@ -50,7 +50,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
