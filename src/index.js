@@ -5,6 +5,7 @@ import './index.css';
 import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
+// eslint-disable-next-line no-undef
 console.log(process.env.REACT_APP_GITHUB_ACCES_TOKEN);
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -17,6 +18,7 @@ export async function getStaticProps() {
     return {
       headers: {
         ...headers,
+        // eslint-disable-next-line no-undef
         authorization: `Bearer ${process.env.REACT_APP_GITHUB_ACCES_TOKEN}`,
       }
     };
