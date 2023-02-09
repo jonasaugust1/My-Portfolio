@@ -15,16 +15,16 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
-                <h4>HTML</h4>
-                <small className='text-light'>Experienced Gama Academy</small>
+                <h4>React</h4>
+                <small className='text-light'>Experienced ZTaurus</small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
-                <h4>CSS</h4>
-                <small className='text-light'>Experienced Gama Academy</small>
+                <h4>React Native</h4>
+                <small className='text-light'>Experienced ZTaurus</small>
               </div>
             </article>
 
@@ -33,14 +33,6 @@ const Experience = () => {
               <div>
                 <h4>Javascript</h4>
                 <small className='text-light'>Experienced Gama Academy</small>
-              </div>
-            </article>
-
-            <article className='experience__details'>
-              <BsFillCheckCircleFill className='experience__details-icon' />
-              <div>
-                <h4>React</h4>
-                <small className='text-light'>Experienced Code Academy</small>
               </div>
             </article>
           </div>
@@ -61,7 +53,7 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
                 <h4>C#</h4>
-                <small className='text-light'>Experienced Code Academy</small>
+                <small className='text-light'>Experienced Sinqia</small>
               </div>
             </article>
 

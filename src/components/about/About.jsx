@@ -29,7 +29,7 @@ const About = () => {
             <article className='about__card'>
               <MdWork className='about__icon' />
               <h5>Work</h5>
-              <small>Intelligence Kapital</small>
+              <small>Sinqia</small>
             </article>
 
             <article className='about__card'>
