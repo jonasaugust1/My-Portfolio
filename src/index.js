@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDom from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 // eslint-disable-next-line no-undef
+const rootElement = document.getElementById('root');
 
-ReactDom.render(<App />, document.getElementById('root'));
+createRoot(rootElement).render(<App />);
 
 export async function getStaticProps() {
   const httpLink = createHttpLink({
