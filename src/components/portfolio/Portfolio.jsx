@@ -14,7 +14,6 @@ const Portfolio = () => {
     getStaticProps().then(data => setPinnedItems(data.props.pinnedItems));
   }, []);
 
-
   return (
     <section id='portfolio'>
       <h5>My Recent Works</h5>

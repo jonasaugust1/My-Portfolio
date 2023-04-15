@@ -1,13 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import App from './App';
 import './index.css';
 import { ApolloClient, createHttpLink, InMemoryCache, gql } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
 // eslint-disable-next-line no-undef
-console.log(process.env.REACT_APP_GITHUB_ACCES_TOKEN);
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootElement = document.getElementById('root');
+
+createRoot(rootElement).render(<App />);
 
 export async function getStaticProps() {
   const httpLink = createHttpLink({
@@ -56,7 +57,7 @@ export async function getStaticProps() {
 
   const {user} = data;
   const pinnedItems = user.pinnedItems.nodes;
-
+  
   return {
     props: {
       pinnedItems

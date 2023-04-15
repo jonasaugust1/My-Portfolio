@@ -31,8 +31,16 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
-                <h4>Javascript</h4>
-                <small className='text-light'>Experienced Gama Academy</small>
+                <h4>Typescript</h4>
+                <small className='text-light'>Experienced Sinqia and ZTaurus</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsFillCheckCircleFill className='experience__details-icon' />
+              <div>
+                <h4>Angular</h4>
+                <small className='text-light'>Experienced Sinqia</small>
               </div>
             </article>
           </div>
@@ -60,16 +68,16 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
-                <h4>Java</h4>
-                <small className='text-light'>Experienced Alura</small>
+                <h4>Visual Basic</h4>
+                <small className='text-light'>Experienced Sinqia</small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div>
-                <h4>MySQL</h4>
-                <small className='text-light'>Experienced Gama Academy</small>
+                <h4>Oracle</h4>
+                <small className='text-light'>Experienced Sinqia</small>
               </div>
             </article>
           </div>

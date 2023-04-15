@@ -23,7 +23,7 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>Junior</small>
+              <small>+1 year</small>
             </article>
 
             <article className='about__card'>
@@ -35,15 +35,31 @@ const About = () => {
             <article className='about__card'>
               <BsFillFolderFill className='about__icon' />
               <h5>Projects</h5>
-              <small>+60 Projects</small>
+              <small>+90 Projects</small>
             </article>
           </div>
 
           <p>
-                        Jonas is passionate about programming and technology, because of the full range of opportunities to make things happen and for positively impacting society.
-            <br />He joined the Software Engineering course at UniCV and is specializing in Backend at Gama Academy.
-                        Jonas is a language lover and is fluent in English and French, studying Italian and Japanese.
-            <br />He is a knowledge-loving person, enjoys new challenges, learning new subjects, studying languages, getting to know new cultures and actively seeking to positively impact society as a whole.
+            As a software engineering student, 
+            I am passionate about technology and always seeking new ways to create innovative and 
+            efficient solutions in software development. With one year of professional experience 
+            and currently employed at Sinqia, I have been honing my skills in software development, 
+            delivering high-quality work in fast-paced environments.
+            <br />
+            <br />
+            I am constantly searching for new challenges and growth opportunities, 
+            with a deep interest in the latest industry trends and technologies. 
+            My goal is to continuously expand my knowledge and skills to stay ahead of the curve 
+            and create solutions that positively impact society.
+            <br />
+            <br />
+            With my strong problem-solving skills and attention to detail, 
+            I am able to tackle complex challenges and ensure project success. 
+            I enjoy working on challenging projects and contributing to the success of the 
+            team and organization.
+            <br />
+            <br />
+            I believe that technology has the power to transform society and I am committed to contributing to this process.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Get in touch</a>
