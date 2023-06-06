@@ -40,28 +40,20 @@ const About = () => {
           </div>
 
           <p>
-            As a software engineering student, 
-            I am passionate about technology and always seeking new ways to create innovative and 
-            efficient solutions in software development. With one year of professional experience 
-            and currently employed at Sinqia, I have been honing my skills in software development, 
-            delivering high-quality work in fast-paced environments.
+            I am a full-stack developer passionate about creating innovative and efficient solutions. 
+            With a wide range of skills in my arsenal, I specialize in various technologies, including 
+            C#, Visual Basic, TypeScript, Node.js, Angular, React, React Native, and .NET.
             <br />
             <br />
-            I am constantly searching for new challenges and growth opportunities, 
-            with a deep interest in the latest industry trends and technologies. 
-            My goal is to continuously expand my knowledge and skills to stay ahead of the curve 
-            and create solutions that positively impact society.
+            My professional journey has led me to work at Sinqia, where I am part of a dynamic team 
+            developing solutions for the pension industry. Here, I have the opportunity to apply my 
+            technical expertise to create robust and scalable systems, catering to the specific needs of the sector.
             <br />
             <br />
-            With my strong problem-solving skills and attention to detail, 
-            I am able to tackle complex challenges and ensure project success. 
-            I enjoy working on challenging projects and contributing to the success of the 
-            team and organization.
-            <br />
-            <br />
-            I believe that technology has the power to transform society and I am committed to contributing to this process.
+            Feel free to reach out to me to discuss collaboration opportunities, networking, 
+            or simply to exchange ideas about the exciting world of software development. 
+            Let&apos;s build something amazing together!
           </p>
-
           <a href="#contact" className='btn btn-primary'>Get in touch</a>
         </div>
       </div>

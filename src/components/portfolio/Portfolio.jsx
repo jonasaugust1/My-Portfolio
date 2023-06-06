@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { getStaticProps } from '../..';
+import { projects } from '../../projects/projects';
 
 const Portfolio = () => {
 
@@ -16,8 +17,45 @@ const Portfolio = () => {
 
   return (
     <section id='portfolio'>
-      <h5>My Recent Works</h5>
+      <h5>Real Cases</h5>
       <h2>Portfolio</h2>
+
+      <Swiper className='container portfolio__container'
+        modules={[Pagination, Navigation]}
+        spaceBetween={40}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {
+          projects.map(item => {
+            return (
+              <SwiperSlide key={item.id} className='portfolio__item'>
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+                <div style={{display: 'flex'}}>
+                  {item.technologies.map((tech, i) => {
+                    return (
+                      <div key={i} className='portfolio__item-language'>
+                        <span className='portfolio__item-technology'>{item.technologies[i]}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+                <div className='portfolio__item-cta'>
+                  {item.github.length > 0 ? 
+                    <a href={item.github} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
+                    :
+                    <></>}
+                </div>
+              </SwiperSlide>
+            );
+          })
+        }
+      </Swiper>
+
+      <h5 style={{marginTop: '5%'}}>Other Works</h5>
+      <h2>Projects</h2>
 
       <Swiper className='container portfolio__container'
         modules={[Pagination, Navigation]}
