@@ -1,11 +1,9 @@
-import reportApp from '../assets/reportapp.webp';
-
 export const projects = [
   {
     id: 0,
     title: 'CDESafety App',
     description: 'The mobile app I created using React Native for an Agricultural Aviation company is a powerful tool that enables streamlined operations and improved safety practices. It allows users to easily generate detailed operational and safety reports, access important company information such as client, aircraft, and employee data, and offers a platform for employees to test their knowledge and obtain certifications. The app\'s user-friendly interface and cross-platform compatibility enhance its accessibility, while its efficient development process ensures a high-performance experience. By utilizing this app, the Agricultural Aviation company can optimize workflow processes, enhance safety standards, and empower employees with the necessary tools to excel in their roles.',
-    image: reportApp,
+    image: '',
     technologies: ['React Native'],
     github: 'https://github.com/jonasaugust1/CdeSafety-images'
   },
