@@ -31,22 +31,24 @@ const Portfolio = () => {
           projects.map(item => {
             return (
               <SwiperSlide key={item.id} className='portfolio__item'>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-                <div style={{display: 'flex'}}>
-                  {item.technologies.map((tech, i) => {
-                    return (
-                      <div key={i} className='portfolio__item-language'>
-                        <span className='portfolio__item-technology'>{item.technologies[i]}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-                <div className='portfolio__item-cta'>
-                  {item.github.length > 0 ? 
-                    <a href={item.github} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
-                    :
-                    <></>}
+                <div className='portfolio__item-container'>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <div style={{display: 'flex'}}>
+                    {item.technologies.map((tech, i) => {
+                      return (
+                        <div key={i} className='portfolio__item-language'>
+                          <span className='portfolio__item-technology'>{item.technologies[i]}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                  <div className='portfolio__item-cta'>
+                    {item.github.length > 0 ? 
+                      <a href={item.github} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
+                      :
+                      <></>}
+                  </div>
                 </div>
               </SwiperSlide>
             );
@@ -68,14 +70,16 @@ const Portfolio = () => {
           pinnedItems.map(item => {
             return (
               <SwiperSlide key={item.id} className='portfolio__item'>
-                <h3>{item.name}</h3>
-                <p>{item.description}</p>
-                <div className='portfolio__item-language' style={{ backgroundColor: item.primaryLanguage.color }}>
-                  <span>{item.primaryLanguage.name}</span>
-                </div>
-                <div className='portfolio__item-cta'>
-                  <a href={item.url} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
-                  {item.homepageUrl && <a href={item.homepageUrl} target='_blank' rel='noreferrer' className='btn btn-primary'>Live Demo</a>}
+                <div className='portfolio__item-container'>
+                  <h3>{item.name}</h3>
+                  <p>{item.description}</p>
+                  <div className='portfolio__item-language' style={{ backgroundColor: item.primaryLanguage.color }}>
+                    <span>{item.primaryLanguage.name}</span>
+                  </div>
+                  <div className='portfolio__item-cta'>
+                    <a href={item.url} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
+                    {item.homepageUrl && <a href={item.homepageUrl} target='_blank' rel='noreferrer' className='btn btn-primary'>Live Demo</a>}
+                  </div>
                 </div>
               </SwiperSlide>
             );

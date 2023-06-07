@@ -1,4 +1,6 @@
 .portfolio__item {
+    display: flex;
+    flex-direction: column;
     background: var(--color-bg-variant);
     padding: 1.3rem;
     border-radius: 2rem;
@@ -9,6 +11,10 @@
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
+}
+
+.portfolio__item-container{
+    flex: 1;
 }
 
 .portfolio__item-language {
@@ -36,7 +42,6 @@
 .portfolio__item-cta {
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -53,10 +58,6 @@
 
 /* MEDIA QUERY (SMALL DEVICES) */
 @media screen and (max-width: 600px) {
-    .portfolio__item p {
-        font-size: small;
-    }
-
     .portfolio__item-language {
         width: 35%;
         margin-bottom: 8%;
