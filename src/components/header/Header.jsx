@@ -8,7 +8,7 @@ import TypeWriter from 'typewriter-effect';
 const Header = () => {
   return (
     <header>
-      <div className="container header__container">
+      <section id='header' className="container header__container">
         <div className='typewriter'>
           <TypeWriter onInit={(typewriter) => {
             typewriter.typeString('Hello, my name is Jonas Augusto')
@@ -32,7 +32,7 @@ const Header = () => {
         </div>
 
         <a href="#contact" className='scroll__down'>Scroll Down</a>
-      </div>
+      </section>
     </header>
   );
 };

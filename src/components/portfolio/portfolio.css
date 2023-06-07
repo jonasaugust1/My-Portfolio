@@ -8,11 +8,6 @@
     transition: var(--transition);
 }
 
-.portfolio__item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
-}
-
 .portfolio__item-container{
     flex: 1;
 }
