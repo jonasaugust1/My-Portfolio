@@ -31,3 +31,8 @@ nav a.active {
     background: var(--color-primary);
     color: var(--color-bg);
 }
+
+.change-bg {
+    background-color: blue;
+    transition: background-color 0.3s ease; 
+  }

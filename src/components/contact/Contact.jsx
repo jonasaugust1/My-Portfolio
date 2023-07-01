@@ -1,25 +1,37 @@
 import './contact.css';
 import {MdEmail} from 'react-icons/md';
 import {IoLogoWhatsapp} from 'react-icons/io';
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
+import validator from 'validator';
 
 const Contact = () => {
+  const [isValid, setValid] = useState(true);
 
   const form = useRef();
+
+  const validateEmail = (e) => {
+    const email = e.target.value;  
+    validator.isEmail(email) ? setValid(true) : setValid(false);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_3w0y6eg', 'template_z6zzg04', form.current, 'v0PBVciYEmTwfVbn1')
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
+    if(isValid){
+      // eslint-disable-next-line no-undef
+      emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, 'template_z6zzg04', form.current, process.env.REACT_APP_EMAIL_KEY)
+        .then((result) => {
+          console.log(result.text);
+        }, (error) => {
+          console.log(error.text);
+        });
 
-    e.target.reset();
-    alert('Menssagem enviada!');
+      e.target.reset();
+      alert('Message sent with success.');
+    }else{
+      alert('Please enter a valid email address.');
+    }
   };
 
   return (
@@ -46,7 +58,8 @@ const Contact = () => {
 
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name='name' placeholder='Full Name' required/>
-          <input type="email" name='email' placeholder='Your Email' required />
+          <input type="email" name='email' placeholder='Your Email' onChange={validateEmail} required />
+          {!isValid && <p >Please enter a valid email address.</p>}
           <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
           <button type='submit' className='btn btn-primary'>Send a message</button>
         </form>
