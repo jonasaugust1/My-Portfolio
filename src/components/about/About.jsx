@@ -29,7 +29,11 @@ const About = () => {
             <article className='about__card'>
               <MdWork className='about__icon' />
               <h5>Work</h5>
-              <small>Sinqia</small>
+              <small>
+                <a href='https://sinqia.com.br/' target='_blank' rel="noreferrer">
+                  Sinqia
+                </a> 
+              </small>
             </article>
 
             <article className='about__card'>
