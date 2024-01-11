@@ -34,6 +34,11 @@ const Portfolio = () => {
                 <div className='portfolio__item-container'>
                   <h3>{item.title}</h3>
                   <p>{item.description}</p>
+                  {
+                    item.image.length > 0 ?
+                      <img src={item.image}/> :
+                      <></>
+                  }
                   <div style={{display: 'flex'}}>
                     {item.technologies.map((tech, i) => {
                       return (

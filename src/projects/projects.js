@@ -1,3 +1,5 @@
+import comparadorAPI from '../assets/comparadorAPI.webp';
+
 export const projects = [
   {
     id: 0,
@@ -19,7 +21,7 @@ export const projects = [
     id: 2,
     title: 'API Comparer',
     description: 'I collaborated with my team to develop an API comparer for Sinqia\'s internal use. This tool enables users to compare two versions of APIs without worrying about exposing confidential files.',
-    image: '',
+    image: comparadorAPI,
     technologies: ['Razor Pages', 'C#', '.NET Core'],
     github: ''
   },
