@@ -1,12 +1,13 @@
 import comparadorAPI from '../assets/comparadorAPI.webp';
+import cdesafetyapp from '../assets/cdesafetyapp.webp';
 
 export const projects = [
   {
     id: 0,
-    title: 'CDESafety App',
-    description: 'I created a powerful React Native mobile app for an Agricultural Aviation company, enabling streamlined operations, improved safety practices, and easy access to crucial information. The app allows users to generate detailed reports, access client and aircraft data, and obtain certifications. With a user-friendly interface and optimized performance, it enhances workflow processes and empowers employees to excel in their roles.',
-    image: '',
-    technologies: ['React Native'],
+    title: 'API Comparer',
+    description: 'I collaborated with my team to develop an API comparer for Sinqia\'s internal use. This tool enables users to compare two versions of APIs without worrying about exposing confidential files.',
+    image: comparadorAPI,
+    technologies: ['Razor Pages', 'C#', '.NET Core'],
     github: ''
   },
   {
@@ -19,10 +20,10 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'API Comparer',
-    description: 'I collaborated with my team to develop an API comparer for Sinqia\'s internal use. This tool enables users to compare two versions of APIs without worrying about exposing confidential files.',
-    image: comparadorAPI,
-    technologies: ['Razor Pages', 'C#', '.NET Core'],
+    title: 'CDESafety App',
+    description: 'I created a powerful React Native mobile app for an Agricultural Aviation company, enabling streamlined operations, improved safety practices, and easy access to crucial information. The app allows users to generate detailed reports, access client and aircraft data, and obtain certifications. With a user-friendly interface and optimized performance, it enhances workflow processes and empowers employees to excel in their roles.',
+    image: cdesafetyapp,
+    technologies: ['React Native'],
     github: ''
   },
 ];
