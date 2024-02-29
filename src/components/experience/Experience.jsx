@@ -16,7 +16,7 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
                 <h4>React</h4>
-                <small className='text-light'>Experienced ZTaurus</small>
+                <small className='text-light'>Experienced Sinqia and MTM</small>
               </div>
             </article>
 
@@ -32,7 +32,7 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
                 <h4>Typescript</h4>
-                <small className='text-light'>Experienced Sinqia and ZTaurus</small>
+                <small className='text-light'>Experienced Sinqia and MTM</small>
               </div>
             </article>
 
@@ -40,7 +40,7 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
                 <h4>Angular</h4>
-                <small className='text-light'>Experienced Sinqia</small>
+                <small className='text-light'>Experienced Sinqia and MTM</small>
               </div>
             </article>
           </div>
@@ -53,7 +53,7 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
                 <h4>Node JS</h4>
-                <small className='text-light'>Experienced Gama Academy</small>
+                <small className='text-light'>Experienced MTM</small>
               </div>
             </article>
 

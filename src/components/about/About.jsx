@@ -23,15 +23,15 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>2 years</small>
+              <small>+2 years</small>
             </article>
 
             <article className='about__card'>
               <MdWork className='about__icon' />
               <h5>Work</h5>
               <small>
-                <a href='https://sinqia.com.br/' target='_blank' rel="noreferrer">
-                  Sinqia
+                <a href='https://www.mtmtecnologia.com.br/' target='_blank' rel="noreferrer">
+                  MTM
                 </a> 
               </small>
             </article>
@@ -46,11 +46,11 @@ const About = () => {
           <p>
             I am a full-stack developer passionate about creating innovative and efficient solutions. 
             With a wide range of skills in my arsenal, I specialize in various technologies, including 
-            C#, Visual Basic, TypeScript, Node.js, Angular, React, React Native, and .NET.
+            C#, Visual Basic, Oracle Cloud, Node.js, Angular, React, React Native, and .NET.
             <br />
             <br />
-            My professional journey has led me to work at Sinqia, where I am part of a dynamic team 
-            developing solutions for the pension industry. Here, I have the opportunity to apply my 
+            My professional journey has led me to work at MTM, where I am part of a dynamic team 
+            developing solutions for the health industry. Here, I have the opportunity to apply my 
             technical expertise to create robust and scalable systems, catering to the specific needs of the sector.
             <br />
             <br />
