@@ -44,14 +44,16 @@ const About = () => {
           </div>
 
           <p>
-            I am a full-stack developer passionate about creating innovative and efficient solutions. 
-            With a wide range of skills in my arsenal, I specialize in various technologies, including 
-            C#, Visual Basic, Oracle Cloud, Node.js, Angular, React, React Native, and .NET.
-            <br />
-            <br />
-            My professional journey has led me to work at MTM, where I am part of a dynamic team 
-            developing solutions for the health industry. Here, I have the opportunity to apply my 
-            technical expertise to create robust and scalable systems, catering to the specific needs of the sector.
+            Technology enthusiast with a passion for solving complex problems. 
+            Started programming at the age of 17 and has consistently honed skills since then. 
+            Proficient in various programming languages and frameworks, including .NET, Python, 
+            Angular, React, React Native, Flutter, Node. Experienced in working with databases 
+            such as Oracle, SQL Server, and MySQL. Familiar with agile methodologies, including 
+            Scrum and Kanban. Skilled in developing scalable and flexible applications on Oracle 
+            Cloud and Microsoft Azure. Currently employed as a Full stack Developer, contributing 
+            to challenging and innovative projects. Committed to delivering high-quality solutions, 
+            prioritizing customer satisfaction, and embracing continuous improvement. 
+            Enjoys knowledge sharing and learning from peers.
             <br />
             <br />
             Feel free to reach out to me to discuss collaboration opportunities, networking, 
