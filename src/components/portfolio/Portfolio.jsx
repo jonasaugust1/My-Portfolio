@@ -50,7 +50,7 @@ const Portfolio = () => {
                   </div>
                   <div className='portfolio__item-cta'>
                     {item.github.length > 0 ? 
-                      <a href={item.github} target='_blank' rel='noreferrer' className='btn'>GitHub</a>
+                      <a href={item.github} target='_blank' rel='noreferrer' className='btn'>Play Store</a>
                       :
                       <></>}
                   </div>
