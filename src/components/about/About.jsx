@@ -30,8 +30,8 @@ const About = () => {
               <MdWork className='about__icon' />
               <h5>Work</h5>
               <small>
-                <a href='https://www.mtmtecnologia.com.br/' target='_blank' rel="noreferrer">
-                  MTM
+                <a href='https://www.xpi.com.br' target='_blank' rel="noreferrer">
+                  XP Inc
                 </a> 
               </small>
             </article>
@@ -44,16 +44,9 @@ const About = () => {
           </div>
 
           <p>
-            Technology enthusiast with a passion for solving complex problems. 
-            Started programming at the age of 17 and has consistently honed skills since then. 
-            Proficient in various programming languages and frameworks, including .NET, Python, 
-            Angular, React, React Native, Flutter, Node. Experienced in working with databases 
-            such as Oracle, SQL Server, and MySQL. Familiar with agile methodologies, including 
-            Scrum and Kanban. Skilled in developing scalable and flexible applications on Oracle 
-            Cloud and Microsoft Azure. Currently employed as a Full stack Developer, contributing 
-            to challenging and innovative projects. Committed to delivering high-quality solutions, 
-            prioritizing customer satisfaction, and embracing continuous improvement. 
-            Enjoys knowledge sharing and learning from peers.
+            From an early age, I have been fascinated by the ability of technology to transform the world around us. I chose to become a software developer because I believe in the power of creating solutions that positively impact the lives of millions of people. The possibility of streamlining various aspects of daily life and speeding up processes motivates me with every line of code I write.
+
+            My journey in the development field is guided by the desire to break patterns and find new ways of doing things. Contributing to innovative projects is what drives me, and I am always looking for opportunities to apply my skills to initiatives that truly make a difference.
             <br />
             <br />
             Feel free to reach out to me to discuss collaboration opportunities, networking, 
