@@ -52,16 +52,16 @@ const Experience = () => {
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
-                <h4>Node JS</h4>
-                <small className='text-light'>Experienced MTM</small>
+                <h4>.NET</h4>
+                <small className='text-light'>Experienced XP & Sinqia</small>
               </div>
             </article>
 
-            <article className='experience__details'>
+             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
-                <h4>C#</h4>
-                <small className='text-light'>Experienced Sinqia</small>
+                <h4>Azure</h4>
+                <small className='text-light'>Experienced XP</small>
               </div>
             </article>
 
@@ -77,7 +77,15 @@ const Experience = () => {
               <BsFillCheckCircleFill className='experience__details-icon' />
               <div className='experience__details-container'>
                 <h4>Oracle</h4>
-                <small className='text-light'>Experienced Sinqia</small>
+                <small className='text-light'>Experienced Sinqia & MTM</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsFillCheckCircleFill className='experience__details-icon' />
+              <div className='experience__details-container'>
+                <h4>Node JS</h4>
+                <small className='text-light'>Experienced MTM</small>
               </div>
             </article>
           </div>

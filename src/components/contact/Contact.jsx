@@ -2,7 +2,7 @@ import './contact.css';
 import {MdEmail} from 'react-icons/md';
 import {IoLogoWhatsapp} from 'react-icons/io';
 import React, { useRef, useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import validator from 'validator';
 
 const Contact = () => {
@@ -19,13 +19,17 @@ const Contact = () => {
     e.preventDefault();
 
     if(isValid){
-      // eslint-disable-next-line no-undef
-      emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, 'template_z6zzg04', form.current, process.env.REACT_APP_EMAIL_KEY)
-        .then((result) => {
-          console.log(result.text);
-        }, (error) => {
-          console.log(error.text);
-        });
+      emailjs.sendForm(
+        process.env.REACT_APP_EMAIL_SERVICE_ID, 
+        'template_z6zzg04', 
+        form.current, 
+        process.env.REACT_APP_EMAIL_KEY
+      )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
       e.target.reset();
       alert('Message sent with success.');
@@ -51,8 +55,8 @@ const Contact = () => {
           <article className='contact__option'>
             <IoLogoWhatsapp className='contact__option-icon' />
             <h4>Whatsapp</h4>
-            <h5>+55 (79) 99933-9044</h5>
-            <a href="https://api.whatsapp.com/send?phone=5579999339044" target='_blank' rel='noreferrer'>Get in touch</a>
+            <h5>+55 (11) 97062-3991</h5>
+            <a href="https://api.whatsapp.com/send?phone=5511970623991" target='_blank' rel='noreferrer'>Get in touch</a>
           </article>
         </div>
 
