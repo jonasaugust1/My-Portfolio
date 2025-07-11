@@ -32,7 +32,7 @@ const Portfolio = () => {
                   <img src={item.image}/> :
                   <></>
               }
-              <div style={{display: 'flex'}}>
+              <div className='portfolio__container__item-language'>
                 {item.technologies.map((_, i) => {
                   return (
                     <div key={i} className='portfolio__item-language'>
@@ -59,7 +59,7 @@ const Portfolio = () => {
                     href={item.appStore} 
                     target='_blank' 
                     rel='noreferrer'
-                    className='btn btn-primary'
+                    className='btn btn-primary btn-sm'
                   >
                     App Store
                   </a>
