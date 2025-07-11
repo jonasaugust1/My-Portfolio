@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './portfolio.css';
-import { Pagination, Navigation } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { getStaticProps } from '../..';
 import { projects } from '../../projects/projects';
+import { ProjectCarousel } from './ProjectCarousel';
 
 const Portfolio = () => {
 
@@ -20,61 +20,63 @@ const Portfolio = () => {
       <h5>Real Cases</h5>
       <h2>Portfolio</h2>
 
-      <Swiper className='container portfolio__container'
-        modules={[Pagination, Navigation]}
-        spaceBetween={40}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {
-          projects.map(item => {
-            return (
-              <SwiperSlide key={item.id} className='portfolio__item'>
-                <div className='portfolio__item-container'>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  {
-                    item.image.length > 0 ?
-                      <img src={item.image}/> :
-                      <></>
-                  }
-                  <div style={{display: 'flex'}}>
-                    {item.technologies.map((tech, i) => {
-                      return (
-                        <div key={i} className='portfolio__item-language'>
-                          <span className='portfolio__item-technology'>{item.technologies[i]}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
-                  <div className='portfolio__item-cta'>
-                    {item.github.length > 0 ? 
-                      <a href={item.github} target='_blank' rel='noreferrer' className='btn'>Play Store</a>
-                      :
-                      <></>}
-                  </div>
-                </div>
-              </SwiperSlide>
-            );
-          })
-        }
-      </Swiper>
+      <ProjectCarousel
+        items={projects}
+        renderSlide={(item) => (
+          <SwiperSlide key={item.id} className='portfolio__item'>
+            <div className='portfolio__item-container'>
+              <h3>{item.title}</h3>
+              <p style={{marginBottom: '3%'}}>{item.description}</p>
+              {
+                item.image.length > 0 ?
+                  <img src={item.image}/> :
+                  <></>
+              }
+              <div style={{display: 'flex'}}>
+                {item.technologies.map((_, i) => {
+                  return (
+                    <div key={i} className='portfolio__item-language'>
+                      <span className='portfolio__item-technology'>{item.technologies[i]}</span>
+                    </div>
+                  );
+                })}
+              </div>
+              <div className='portfolio__item-cta'>
+                {
+                  item.playStore && 
+                  <a 
+                    href={item.playStore} 
+                    target='_blank' 
+                    rel='noreferrer' 
+                    className='btn btn-primary'
+                  >
+                    Play Store
+                  </a>
+                }
+                {
+                  item.appStore && 
+                  <a 
+                    href={item.appStore} 
+                    target='_blank' 
+                    rel='noreferrer'
+                    className='btn btn-primary'
+                  >
+                    App Store
+                  </a>
+                }
+              </div>
+            </div>
+          </SwiperSlide>
+        )}
+      />
 
       <h5 style={{marginTop: '5%'}}>Other Works</h5>
       <h2>Projects</h2>
 
-      <Swiper className='container portfolio__container'
-        modules={[Pagination, Navigation]}
-        spaceBetween={40}
-        slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
-      >
-        {
-          pinnedItems.map(item => {
-            return (
-              <SwiperSlide key={item.id} className='portfolio__item'>
+      <ProjectCarousel 
+        items={pinnedItems}
+        renderSlide={(item) => (
+          <SwiperSlide key={item.id} className='portfolio__item'>
                 <div className='portfolio__item-container'>
                   <h3>{item.name}</h3>
                   <p>{item.description}</p>
@@ -86,11 +88,9 @@ const Portfolio = () => {
                     {item.homepageUrl && <a href={item.homepageUrl} target='_blank' rel='noreferrer' className='btn btn-primary'>Live Demo</a>}
                   </div>
                 </div>
-              </SwiperSlide>
-            );
-          })
-        }
-      </Swiper>
+          </SwiperSlide>
+        )}
+      />
     </section>
   );
 };

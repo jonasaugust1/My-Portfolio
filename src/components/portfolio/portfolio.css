@@ -35,13 +35,16 @@
 }
 
 .portfolio__item-cta {
-    display: flex;
+    display: inline;
     gap: 1rem;
     margin-bottom: 1rem;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
+    width: 1.2vw;
+    height: 1.2vw;
     background: var(--color-primary);
+    transition: all 0.5s ease;
 }
 
 /* MEDIA QUERY (MEDIUM DEVICES) */
