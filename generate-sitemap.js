@@ -1,25 +1,22 @@
-const { SitemapStream, streamToPromise } = require('sitemap');
-const { Readable } = require('stream');
-const { writeFileSync } = require('fs');
+import { SitemapStream, streamToPromise } from 'sitemap';
+import { createWriteStream } from 'fs';
 
-const generateSitemap = async () => {
-  try {
-    const staticLinks = [
-      { url: '/', changefreq: 'daily', priority: 1.0 },
-      { url: '/about', changefreq: 'monthly', priority: 0.8 },
-      { url: '/contact', changefreq: 'monthly', priority: 0.8 },
-      { url: '/experience', changefreq: 'monthly', priority: 0.8 },
-    ];
+const sitemap = new SitemapStream({
+  hostname: 'https://jonasaugusto.com',
+});
 
-    const stream = new SitemapStream({ hostname: 'https://www.jonasaugusto.com' });
-    const data = await streamToPromise(Readable.from(staticLinks).pipe(stream));
+const writeStream = createWriteStream('./build/sitemap.xml');
 
-    // Salva na pasta public para o build do React copiar automaticamente
-    writeFileSync('./public/sitemap.xml', data.toString());
-    console.log('Sitemap gerado com sucesso em ./public/sitemap.xml');
-  } catch (error) {
-    console.error('Erro ao gerar sitemap:', error);
-  }
-};
+sitemap.pipe(writeStream);
 
-generateSitemap();
+sitemap.write({ url: '/', changefreq: 'monthly', priority: 1.0 });
+sitemap.write({ url: '/#about', changefreq: 'monthly', priority: 0.8 });
+sitemap.write({ url: '/#experience', changefreq: 'monthly', priority: 0.8 });
+sitemap.write({ url: '/#portfolio', changefreq: 'monthly', priority: 0.8 });
+sitemap.write({ url: '/#contact', changefreq: 'monthly', priority: 0.8 });
+
+sitemap.end();
+
+streamToPromise(sitemap).then(() => {
+  console.log('Sitemap generated successfully.');
+});
