@@ -46,7 +46,13 @@ i18n
           "frontend-development": "Frontend Development",
           "backend-development": "Backend Development",
 
-          "experienced-at": "Experience at {{companies}}"
+          "experienced-at": "Experience at {{companies}}",
+          "footer-home": "Home",
+          "footer-about": "About",
+          "footer-experience": "Experience",
+          "footer-portfolio": "Portfolio",
+          "footer-contact": "Contact",
+          "footer-rights": "All rights reserved"
         }
       },
       pt: {
@@ -88,7 +94,14 @@ i18n
           "frontend-development": "Desenvolvimento Frontend",
           "backend-development": "Desenvolvimento Backend",
 
-          "experienced-at": "Experiência na {{companies}}"
+          "experienced-at": "Experiência na {{companies}}",
+          "footer-home": "Início",
+          "footer-about": "Sobre",
+          "footer-experience": "Experiência",
+          "footer-portfolio": "Portfólio",
+          "footer-contact": "Contato",
+          "footer-rights": "Todos os direitos reservados"
+
         }
       }
     },
