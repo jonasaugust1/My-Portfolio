@@ -39,7 +39,14 @@ i18n
 
           "invalid-email": "Please enter a valid email address.",
           "message-success": "Message sent successfully.",
-          "send-message-btn": "Send a message"
+          "send-message-btn": "Send a message",
+          "experience-section-title-small": "Technologies I Work With",
+          "experience-section-title": "Professional Experience",
+
+          "frontend-development": "Frontend Development",
+          "backend-development": "Backend Development",
+
+          "experienced-at": "Experience at {{companies}}"
         }
       },
       pt: {
@@ -74,7 +81,14 @@ i18n
 
           "invalid-email": "Por favor, insira um email válido.",
           "message-success": "Mensagem enviada com sucesso.",
-          "send-message-btn": "Enviar mensagem"
+          "send-message-btn": "Enviar mensagem",
+          "experience-section-title-small": "Tecnologias que Utilizo",
+          "experience-section-title": "Experiência Profissional",
+
+          "frontend-development": "Desenvolvimento Frontend",
+          "backend-development": "Desenvolvimento Backend",
+
+          "experienced-at": "Experiência na {{companies}}"
         }
       }
     },
