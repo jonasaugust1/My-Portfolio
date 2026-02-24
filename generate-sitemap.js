@@ -5,7 +5,7 @@ const sitemap = new SitemapStream({
   hostname: 'https://jonasaugusto.com',
 });
 
-const writeStream = createWriteStream('./build/sitemap.xml');
+const writeStream = createWriteStream('./public/sitemap.xml');
 
 sitemap.pipe(writeStream);
 
