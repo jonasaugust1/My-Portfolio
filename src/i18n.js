@@ -57,7 +57,47 @@ i18n
           "portfolio-title": "Portfolio",
           "portfolio-other-works": "Other Works",
           "portfolio-projects": "Projects",
-          "live-demo": "Live Demo"
+          "live-demo": "Live Demo",
+          "portfolio": {
+            "projects": {
+              "xp": {
+                "title": "New XP App",
+                "description": "I contributed to the development of the new XP mobile app, focusing on improving user experience and optimizing performance. Working within a multidisciplinary team, I helped implement key features such as account management, transaction history, and real-time balance updates. The app was designed to be more intuitive, customizable, and efficient."
+              },
+              "jasa": {
+                "title": "Jasa Reports",
+                "description": "Innovative business management application designed to revolutionize business administration processes."
+              },
+              "apiComparer": {
+                "title": "API Comparer",
+                "description": "Developed in collaboration with my team for internal use at Sinqia. This tool allows secure comparison between two API versions without exposing confidential files."
+              },
+              "cdeSafety": {
+                "title": "CDESafety App",
+                "description": "A powerful React Native mobile application for an agricultural aviation company, enabling streamlined operations, improved safety practices, detailed report generation, and easy access to client and aircraft data."
+              },
+            },
+            "githubProjects": {
+              "Jammming": {
+                "description": "React web application integrated with the Spotify API, allowing users to search tracks, create custom playlists, and save them directly to their Spotify account."
+              },
+              "dsmeta": {
+                "description": "Fullstack application built with Java and Spring Boot on the backend and React on the frontend."
+              },
+              "Esports": {
+                "description": "Fullstack system composed of a React web app, a Node.js backend with Prisma, and a React Native mobile app for finding gaming partners."
+              },
+              "FilmesAPI-Dotnet": {
+                "description": "REST API developed with C# and .NET to learn API creation and consumption concepts."
+              },
+              "GeekShopping": {
+                "description": "Microservices-based project developed to study distributed system architecture."
+              },
+              "XamarinApp": {
+                "description": "Mobile application developed to practice Xamarin concepts."
+              }
+            }
+          }
         }
       },
       pt: {
@@ -110,7 +150,47 @@ i18n
           "portfolio-title": "Portfólio",
           "portfolio-other-works": "Outros Trabalhos",
           "portfolio-projects": "Projetos",
-          "live-demo": "Demo Online"
+          "live-demo": "Demo Online",
+          "portfolio": {
+            "projects": {
+              "xp": {
+                "title": "Novo App XP",
+                "description": "Contribuí para o desenvolvimento do novo aplicativo mobile da XP, focando na melhoria da experiência do usuário e otimização de performance. Atuei na implementação de funcionalidades como gestão de contas, histórico de transações e atualização de saldo em tempo real."
+              },
+              "jasa": {
+                "title": "Jasa Reports",
+                "description": "Aplicativo inovador de gestão empresarial desenvolvido para transformar processos administrativos."
+              },
+              "apiComparer": {
+                "title": "Comparador de APIs",
+                "description": "Ferramenta desenvolvida em colaboração com minha equipe para uso interno na Sinqia, permitindo comparar duas versões de APIs com segurança, sem exposição de arquivos confidenciais."
+              },
+              "cdeSafety": {
+                "title": "CDESafety App",
+                "description": "Aplicativo mobile em React Native para empresa de aviação agrícola, permitindo operações mais eficientes, melhoria em práticas de segurança, geração de relatórios detalhados e acesso facilitado a dados de clientes e aeronaves."
+              },
+            },
+            "githubProjects": {
+              "Jammming": {
+                "description": "Aplicação web em React integrada com a API do Spotify, permitindo buscar músicas, criar playlists personalizadas e salvá-las na conta do usuário."
+              },
+              "dsmeta": {
+                "description": "Aplicação fullstack construída com Java e Spring Boot no backend e React no frontend."
+              },
+              "Esports": {
+                "description": "Sistema fullstack composto por aplicação web em React, backend em Node.js com Prisma e aplicativo mobile em React Native para encontrar parceiros de jogo."
+              },
+              "FilmesAPI-Dotnet": {
+                "description": "API REST desenvolvida com C# e .NET para aprendizado de criação e consumo de APIs."
+              },
+              "GeekShopping": {
+                "description": "Projeto baseado em microserviços desenvolvido para estudo de arquitetura distribuída."
+              },
+              "XamarinApp": {
+                "description": "Aplicação mobile criada para prática e aprendizado de Xamarin."
+              }
+            }
+          }
         }
       }
     },

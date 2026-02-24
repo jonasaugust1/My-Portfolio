@@ -26,10 +26,10 @@ const Portfolio = () => {
         renderSlide={(item) => (
           <SwiperSlide key={item.id} className='portfolio__item'>
             <div className='portfolio__item-container'>
-              <h3>{item.title}</h3>
+              <h3>{t(item.title)}</h3>
 
               <p style={{ marginBottom: '3%' }}>
-                {item.description}
+                {t(item.description)}
               </p>
 
               {item.image?.length > 0 && (
@@ -91,7 +91,11 @@ const Portfolio = () => {
             <div className='portfolio__item-container'>
               <h3>{item.name}</h3>
 
-              <p>{item.description}</p>
+              <p> 
+                {t(
+                  `portfolio.githubProjects.${item.name}.description`
+                )}
+              </p>
 
               <div
                 className='portfolio__item-language'
