@@ -1,95 +1,126 @@
 import React from 'react';
 import './experience.css';
-import {BsFillCheckCircleFill} from 'react-icons/bs';
+import { BsFillCheckCircleFill } from 'react-icons/bs';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="experience">
-      <h5>Wich skills I have</h5>
-      <h2>My Experience</h2>
+      <h5>{t('experience-section-title-small')}</h5>
+      <h2>{t('experience-section-title')}</h2>
 
       <div className='container experience__container'>
+
+        {/* FRONTEND */}
         <div className='experience__frontend'>
-          <h3>Frontend Development</h3>
+          <h3>{t('frontend-development')}</h3>
+
           <div className='experience__content'>
+
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>React</h4>
-                <small className='text-light'>Experienced Sinqia and MTM</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'Sinqia & MTM' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>React Native</h4>
-                <small className='text-light'>Experienced ZTaurus</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'ZTaurus' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
-                <h4>Typescript</h4>
-                <small className='text-light'>Experienced Sinqia and MTM</small>
+              <div>
+                <h4>TypeScript</h4>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'Sinqia & MTM' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>Angular</h4>
-                <small className='text-light'>Experienced Sinqia and MTM</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'Sinqia & MTM' })}
+                </small>
               </div>
             </article>
+
           </div>
         </div>
-        {/* END OF FRONTEND */}
+
+        {/* BACKEND */}
         <div className='experience__backend'>
-          <h3>Backend Development</h3>
+          <h3>{t('backend-development')}</h3>
+
           <div className='experience__content'>
+
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>.NET</h4>
-                <small className='text-light'>Experienced XP & Sinqia</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'XP & Sinqia' })}
+                </small>
               </div>
             </article>
 
-             <article className='experience__details'>
+            <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>Azure</h4>
-                <small className='text-light'>Experienced XP</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'XP' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>Visual Basic</h4>
-                <small className='text-light'>Experienced Sinqia</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'Sinqia' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
+              <div>
                 <h4>Oracle</h4>
-                <small className='text-light'>Experienced Sinqia & MTM</small>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'Sinqia & MTM' })}
+                </small>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsFillCheckCircleFill className='experience__details-icon' />
-              <div className='experience__details-container'>
-                <h4>Node JS</h4>
-                <small className='text-light'>Experienced MTM</small>
+              <div>
+                <h4>Node.js</h4>
+                <small className='text-light'>
+                  {t('experienced-at', { companies: 'MTM' })}
+                </small>
               </div>
             </article>
+
           </div>
         </div>
+
       </div>
     </section>
   );

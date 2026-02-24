@@ -6,9 +6,9 @@
     transition: var(--transition);
 }
 
+
 .portfolio__container__item-language {
     display: flex;
-    justify-content: space-around;
 }
 
 .portfolio__item-language {
@@ -33,7 +33,7 @@
 
 .portfolio__item-cta {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     margin-bottom: 1rem;
 }
 

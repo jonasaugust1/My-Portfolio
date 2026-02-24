@@ -10,7 +10,6 @@ export const ProjectCarousel = ({ items, renderSlide }) => (
     spaceBetween={40}
     slidesPerView={1}
     autoHeight={true}
-    navigation
     pagination={{ clickable: true }}
   >
     {items.map(renderSlide)}
