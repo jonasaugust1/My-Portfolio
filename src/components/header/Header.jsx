@@ -5,6 +5,7 @@ import HeaderSocial from './HeaderSocial';
 import './header.css';
 import TypeWriter from 'typewriter-effect';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../language-switcher/LanguageSwitcher';
 
 const Header = () => {
   const { i18n, t } = useTranslation();
@@ -14,8 +15,7 @@ const Header = () => {
   };
   return (
     <header>
-      <button onClick={() => changeLanguage('pt')}>PT</button>
-      <button onClick={() => changeLanguage('en')}>EN</button>
+      <LanguageSwitcher />
       <section id='header' className="container header__container">
         <div className='typewriter'>
           <TypeWriter onInit={(typewriter) => {
