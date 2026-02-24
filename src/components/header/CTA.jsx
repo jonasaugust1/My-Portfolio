@@ -1,11 +1,12 @@
 import React from 'react';
-import CV from '../../assets/JonasAraujoCV.docx';
+import { useTranslation } from 'react-i18next';
 
 const CTA = () => {
+  const { t } = useTranslation();
   return (
     <div>
-      <a href={CV} download className='btn'>Download CV</a>
-      <a href="#contact" className='btn btn-primary'>Get in touch</a>
+      <a href="/JonasAraujoCV.docx" download className='btn'>Download CV</a>
+      <a href="#contact" className='btn btn-primary'>{t('contact')}</a>
     </div>
   );
 };

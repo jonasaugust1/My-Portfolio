@@ -23,15 +23,15 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>+2 years</small>
+              <small>4 years</small>
             </article>
 
             <article className='about__card'>
               <MdWork className='about__icon' />
               <h5>Work</h5>
               <small>
-                <a href='https://www.xpi.com.br' target='_blank' rel="noreferrer">
-                  XP Inc
+                <a href='https://www.avanade.com' target='_blank' rel="noreferrer">
+                  Avanade
                 </a> 
               </small>
             </article>

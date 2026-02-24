@@ -20,10 +20,10 @@ const Contact = () => {
 
     if(isValid){
       emailjs.sendForm(
-        process.env.REACT_APP_EMAIL_SERVICE_ID, 
+        process.env.EMAIL_SERVICE_ID, 
         'template_z6zzg04', 
         form.current, 
-        process.env.REACT_APP_EMAIL_KEY
+        process.env.EMAIL_KEY
       )
       .then((result) => {
         console.log(result.text);
