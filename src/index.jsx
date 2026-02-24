@@ -18,7 +18,7 @@ export async function getStaticProps() {
     operation.setContext(({ headers = {} }) => ({
       headers: {
         ...headers,
-        authorization: `Bearer ${process.env.GITHUB_ACCES_TOKEN}`,
+        authorization: `Bearer ${import.meta.env.VITE_GITHUB_ACCES_TOKEN}`,
       },
     }));
 
@@ -29,6 +29,7 @@ export async function getStaticProps() {
     link: authLink.concat(httpLink),
     cache: new InMemoryCache()
   });
+  
 
   const { data } = await client.query({
     query: gql`

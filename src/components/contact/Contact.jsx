@@ -23,10 +23,10 @@ const Contact = () => {
 
     if (isValid) {
       emailjs.sendForm(
-        process.env.EMAIL_SERVICE_ID,
+        import.meta.env.VITE_EMAIL_SERVICE_ID,
         'template_z6zzg04',
         form.current,
-        process.env.EMAIL_KEY
+        import.meta.env.VITE_EMAIL_KEY
       )
         .then((result) => {
           console.log(result.text);
