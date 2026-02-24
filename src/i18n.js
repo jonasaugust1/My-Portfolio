@@ -52,7 +52,12 @@ i18n
           "footer-experience": "Experience",
           "footer-portfolio": "Portfolio",
           "footer-contact": "Contact",
-          "footer-rights": "All rights reserved"
+          "footer-rights": "All rights reserved",
+          "portfolio-real-cases": "Real Cases",
+          "portfolio-title": "Portfolio",
+          "portfolio-other-works": "Other Works",
+          "portfolio-projects": "Projects",
+          "live-demo": "Live Demo"
         }
       },
       pt: {
@@ -100,8 +105,12 @@ i18n
           "footer-experience": "Experiência",
           "footer-portfolio": "Portfólio",
           "footer-contact": "Contato",
-          "footer-rights": "Todos os direitos reservados"
-
+          "footer-rights": "Todos os direitos reservados",
+          "portfolio-real-cases": "Casos Reais",
+          "portfolio-title": "Portfólio",
+          "portfolio-other-works": "Outros Trabalhos",
+          "portfolio-projects": "Projetos",
+          "live-demo": "Demo Online"
         }
       }
     },

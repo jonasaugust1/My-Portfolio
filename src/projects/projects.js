@@ -20,7 +20,7 @@ export const projects = [
     description: ' Innovative Business Management App Designed to Revolutionize Business Administration.',
     image: jasa,
     technologies: ['Flutter', 'Firebase'],
-    github: 'https://play.google.com/store/apps/details?id=com.techmob.jasa'
+    github: ''
   },
   {
     id: 2,
