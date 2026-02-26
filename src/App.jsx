@@ -24,7 +24,6 @@ const App = () => {
         <Suspense fallback={<Skeleton />}>
           <Portfolio />
         </Suspense>
-        <Portfolio />
         <Contact />
       </main>
       <Footer />
