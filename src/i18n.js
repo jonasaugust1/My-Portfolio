@@ -97,6 +97,18 @@ i18n
                 "description": "Mobile application developed to practice Xamarin concepts."
               }
             }
+          },
+          "seo": {
+            "title": "Jonas Augusto | Software Engineer & Fullstack Developer",
+            "description": "Explore the portfolio of Jonas Augusto, a Software Engineer specialized in building robust and scalable solutions. Experience in Fullstack development and modern applications.",
+            "og_title": "Jonas Augusto | Software Engineer & Fullstack Developer",
+            "og_description": "Software Engineer focused on robust solutions for the global market. Check my portfolio and projects in .NET, Flutter, and Fullstack technologies.",
+            "twitter_title": "Jonas Augusto | Software Engineer",
+            "twitter_description": "Software Engineering and Fullstack Development Portfolio.",
+            "h1_hidden": "Jonas Augusto | Software Engineer & Fullstack Developer - .NET, Flutter, React, Azure"
+          },
+          "schema": {
+            "description": "Software Engineer specialized in Fullstack development, creating robust solutions for the global market."
           }
         }
       },
@@ -190,6 +202,18 @@ i18n
                 "description": "Aplicação mobile criada para prática e aprendizado de Xamarin."
               }
             }
+          },
+          "seo": {
+            "title": "Jonas Augusto | Software Engineer & Desenvolvedor Fullstack",
+            "description": "Conheça o portfólio de Jonas Augusto, Engenheiro de Software especializado em criar soluções robustas e escaláveis. Experiência em desenvolvimento Fullstack e aplicações modernas.",
+            "og_title": "Jonas Augusto | Software Engineer & Fullstack Developer",
+            "og_description": "Engenheiro de Software focado em soluções robustas para o mercado global. Veja meu portfólio e projetos em .NET, Flutter e tecnologias Fullstack.",
+            "twitter_title": "Jonas Augusto | Software Engineer",
+            "twitter_description": "Portfólio de Engenharia de Software e Desenvolvimento Fullstack.",
+            "h1_hidden": "Jonas Augusto | Software Engineer & Desenvolvedor Fullstack - .NET, Flutter, React, Azure"
+          },
+          "schema": {
+            "description": "Engenheiro de Software especializado em desenvolvimento Fullstack, criando soluções robustas para o mercado global."
           }
         }
       }

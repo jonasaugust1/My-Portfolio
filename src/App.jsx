@@ -6,13 +6,14 @@ import Experience from './components/experience/Experience';
 import Portfolio from './components/portfolio/Portfolio';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-
+import SEO from './components/seo/SEO';
+import { HelmetProvider } from 'react-helmet-async';
 
 const App = () => {
 
-  
   return (
-    <>
+    <HelmetProvider>
+      <SEO/>
       <Header />
       <Nav />
       <About />
@@ -20,7 +21,7 @@ const App = () => {
       <Portfolio />
       <Contact />
       <Footer />
-    </>
+    </HelmetProvider>
   );
 };
 
