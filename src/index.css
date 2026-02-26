@@ -1,3 +1,35 @@
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url('/fonts/Poppins-Light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/Poppins-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/fonts/Poppins-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/fonts/Poppins-SemiBold.woff2') format('woff2');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +63,7 @@ html {
     display: none;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background: var(--color-bg);
     color: var(--color-white);
@@ -41,12 +73,16 @@ body{
 
 /* GENERAL STYLES */
 
-.container{
+.container {
     width: var(--container-width-lg);
     margin: 0 auto;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-weight: 500;
 }
 
@@ -58,13 +94,13 @@ section {
     margin-top: 7rem;
 }
 
-section > h2, 
-section > h5 {
+section>h2,
+section>h5 {
     text-align: center;
     color: var(--color-light);
 }
 
-section > h2 {
+section>h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
 }
@@ -127,8 +163,7 @@ img {
         width: var(--container-width-sm);
     }
 
-    section > h2 {
+    section>h2 {
         margin-bottom: 2rem;
     }
 }
-
