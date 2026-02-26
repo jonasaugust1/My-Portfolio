@@ -5,6 +5,10 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 export const ProjectCarousel = ({ items, renderSlide }) => (
   <Swiper
+    observer={true}
+    observeParents={true}
+    watchSlidesProgress={true}
+    resizeObserver={true}
     className='container portfolio__container'
     modules={[Pagination, Navigation]}
     spaceBetween={40}

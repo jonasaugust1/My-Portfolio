@@ -7,6 +7,7 @@ import { getStaticProps } from '../..';
 import { projects } from '../../projects/projects';
 import { ProjectCarousel } from './ProjectCarousel';
 import { useTranslation } from 'react-i18next';
+import Skeleton from '../skeleton/Skeleton';
 
 const Portfolio = () => {
   const { t } = useTranslation();
@@ -94,7 +95,7 @@ const Portfolio = () => {
 
       {
         loading ?
-          <div className="portfolio__loading">Carregando projetos do GitHub...</div> :
+          <Skeleton /> :
           <ProjectCarousel
             items={pinnedItems}
             renderSlide={(item) => (
