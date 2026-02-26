@@ -33,7 +33,7 @@ const About = () => {
               <MdWork className='about__icon' />
               <h5>{t('work')}</h5>
               <small>
-                <a href='https://www.avanade.com' target='_blank' rel="noreferrer">
+                <a href='https://www.avanade.com' aria-label='Avanade link' target='_blank' rel="noreferrer">
                   Avanade
                 </a>
               </small>
@@ -49,7 +49,7 @@ const About = () => {
           <p>
             {t('about-description')}
           </p>
-          <a href="#contact" className='btn btn-primary'>{t('contact')}</a>
+          <a href="#contact" aria-label={t('contact')} className='btn btn-primary'>{t('contact')}</a>
         </div>
       </div>
     </section>

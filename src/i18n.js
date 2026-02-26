@@ -109,6 +109,13 @@ i18n
           },
           "schema": {
             "description": "Software Engineer specialized in Fullstack development, creating robust solutions for the global market."
+          },
+          "nav": {
+            "home": "Home",
+            "about": "About",
+            "experience": "Experience",
+            "portfolio": "Portfolio",
+            "contact": "Contact"
           }
         }
       },
@@ -214,6 +221,13 @@ i18n
           },
           "schema": {
             "description": "Engenheiro de Software especializado em desenvolvimento Fullstack, criando soluções robustas para o mercado global."
+          },
+          "nav": {
+            "home": "Início",
+            "about": "Sobre",
+            "experience": "Experiência",
+            "portfolio": "Portfólio",
+            "contact": "Contato"
           }
         }
       }

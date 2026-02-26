@@ -11,9 +11,15 @@ import { useTranslation } from 'react-i18next';
 const Portfolio = () => {
   const { t } = useTranslation();
   const [pinnedItems, setPinnedItems] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    getStaticProps().then(data => setPinnedItems(data.props.pinnedItems));
+    getStaticProps()
+      .then(data => {
+        setPinnedItems(data.props.pinnedItems);
+        setLoading(false);
+      })
+      .catch(() => setLoading(false));
   }, []);
 
   return (
@@ -54,6 +60,7 @@ const Portfolio = () => {
                 {item.playStore && (
                   <a
                     href={item.playStore}
+                    aria-label='Play Store'
                     target='_blank'
                     rel='noreferrer'
                     className='btn btn-primary'
@@ -65,6 +72,7 @@ const Portfolio = () => {
                 {item.appStore && (
                   <a
                     href={item.appStore}
+                    aria-label='App Store'
                     target='_blank'
                     rel='noreferrer'
                     className='btn btn-primary btn-sm'
@@ -84,51 +92,57 @@ const Portfolio = () => {
 
       <h2>{t('portfolio-projects')}</h2>
 
-      <ProjectCarousel
-        items={pinnedItems}
-        renderSlide={(item) => (
-          <SwiperSlide key={item.id} className='portfolio__item'>
-            <div className='portfolio__item-container'>
-              <h3>{item.name}</h3>
+      {
+        loading ?
+          <div className="portfolio__loading">Carregando projetos do GitHub...</div> :
+          <ProjectCarousel
+            items={pinnedItems}
+            renderSlide={(item) => (
+              <SwiperSlide key={item.id} className='portfolio__item'>
+                <div className='portfolio__item-container'>
+                  <h3>{item.name}</h3>
 
-              <p> 
-                {t(
-                  `portfolio.githubProjects.${item.name}.description`
-                )}
-              </p>
+                  <p>
+                    {t(
+                      `portfolio.githubProjects.${item.name}.description`
+                    )}
+                  </p>
 
-              <div
-                className='portfolio__item-language'
-                style={{ backgroundColor: item.primaryLanguage.color }}
-              >
-                <span>{item.primaryLanguage.name}</span>
-              </div>
-
-              <div className='portfolio__item-cta'>
-                <a
-                  href={item.url}
-                  target='_blank'
-                  rel='noreferrer'
-                  className='btn'
-                >
-                  Github
-                </a>
-
-                {item.homepageUrl && (
-                  <a
-                    href={item.homepageUrl}
-                    target='_blank'
-                    rel='noreferrer'
-                    className='btn btn-primary'
+                  <div
+                    className='portfolio__item-language'
+                    style={{ backgroundColor: item.primaryLanguage.color }}
                   >
-                    {t('live-demo')}
-                  </a>
-                )}
-              </div>
-            </div>
-          </SwiperSlide>
-        )}
-      />
+                    <span>{item.primaryLanguage.name}</span>
+                  </div>
+
+                  <div className='portfolio__item-cta'>
+                    <a
+                      href={item.url}
+                      aria-label='Github'
+                      target='_blank'
+                      rel='noreferrer'
+                      className='btn'
+                    >
+                      Github
+                    </a>
+
+                    {item.homepageUrl && (
+                      <a
+                        href={item.homepageUrl}
+                        aria-label={t('live-demo')}
+                        target='_blank'
+                        rel='noreferrer'
+                        className='btn btn-primary'
+                      >
+                        {t('live-demo')}
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </SwiperSlide>
+            )}
+          />
+      }
     </section>
   );
 };

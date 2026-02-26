@@ -5,8 +5,8 @@ const CTA = () => {
   const { t } = useTranslation();
   return (
     <div>
-      <a href="/JonasAraujoCV.docx" download className='btn'>Download CV</a>
-      <a href="#contact" className='btn btn-primary'>{t('contact')}</a>
+      <a href="/JonasAraujoCV.docx" aria-label='Download CV' download className='btn'>Download CV</a>
+      <a href="#contact" aria-label={t('contact')} className='btn btn-primary'>{t('contact')}</a>
     </div>
   );
 };

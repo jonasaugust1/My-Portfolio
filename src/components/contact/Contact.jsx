@@ -52,7 +52,7 @@ const Contact = () => {
             <MdEmail className='contact__option-icon' />
             <h4>{t('email')}</h4>
             <h5>jonasaugusto99@gmail.com</h5>
-            <a href="mailto:jonasaugusto99@gmail.com" target='_blank' rel='noreferrer'>
+            <a href="mailto:jonasaugusto99@gmail.com" aria-label={t('send-email')} target='_blank' rel='noreferrer'>
               {t('send-email')}
             </a>
           </article>
@@ -63,6 +63,7 @@ const Contact = () => {
             <h5>+55 (11) 97062-3991</h5>
             <a
               href="https://api.whatsapp.com/send?phone=5511970623991"
+              aria-label={t('get-in-touch')}
               target='_blank'
               rel='noreferrer'
             >

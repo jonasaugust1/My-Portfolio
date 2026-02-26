@@ -13,13 +13,15 @@ const App = () => {
 
   return (
     <HelmetProvider>
-      <SEO/>
+      <SEO />
       <Header />
       <Nav />
-      <About />
-      <Experience />
-      <Portfolio />
-      <Contact />
+      <main>
+        <About />
+        <Experience />
+        <Portfolio />
+        <Contact />
+      </main>
       <Footer />
     </HelmetProvider>
   );

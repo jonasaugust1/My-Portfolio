@@ -37,7 +37,7 @@ const Header = () => {
           <img src={FS} alt="Fullstack" />
         </div>
 
-        <a href="#contact" className='scroll__down'>{t("scroll-down")}</a>
+        <a href="#contact" aria-label={t("nav.contact")} className='scroll__down'>{t("scroll-down")}</a>
       </section>
     </header>
   );

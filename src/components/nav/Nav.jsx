@@ -1,44 +1,44 @@
-import React, {useEffect} from 'react';
+import React, { useEffect, useState } from 'react';
 import './nav.css';
-import {AiOutlineHome} from 'react-icons/ai';
-import {AiOutlineUser} from 'react-icons/ai';
-import {AiOutlineBook} from 'react-icons/ai';
-import {BiMessageSquareDetail} from 'react-icons/bi';
-import {MdWorkOutline} from 'react-icons/md';
-import { useState } from 'react';
+import { AiOutlineHome, AiOutlineUser, AiOutlineBook } from 'react-icons/ai';
+import { BiMessageSquareDetail } from 'react-icons/bi';
+import { MdWorkOutline } from 'react-icons/md';
+import { useTranslation } from 'react-i18next';
 
 const Nav = () => {
+  const { t } = useTranslation();
   const [activeNav, setActiveNav] = useState('#');
-  const [currentNav, setCurrentNav] = useState('#');
-
-  const handleScroll = () => {
-    const sections = document.querySelectorAll('section');
-
-    sections.forEach((section) => {
-      if (section) {
-        const { top, bottom } = section.getBoundingClientRect();
-
-        if (top <= window.innerHeight * 0.5 && bottom >= window.innerHeight * 0.5) {
-          setCurrentNav(`#${section.id}`);
-        } 
-      }
-    });
-
-    setActiveNav(currentNav);
-  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [currentNav]);
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveNav(`#${entry.target.id}`);
+          }
+        });
+      },
+      { 
+        threshold: 0.5,
+        rootMargin: "-10% 0px -40% 0px"
+      }
+    );
+
+    const sections = document.querySelectorAll('section, header');
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   return (
     <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#header' ? 'active' : ''}><AiOutlineHome /></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-      <a href="#experience" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><AiOutlineBook /></a>
-      <a href="#portfolio" onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><MdWorkOutline /></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
+      <a href="#" aria-label={t('nav.home')} onClick={() => setActiveNav('#')} className={activeNav === '#' || activeNav === 'header' ? 'active' : ''}><AiOutlineHome /></a>
+      <a href="#about" aria-label={t('nav.about')} onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
+      <a href="#experience" aria-label={t('nav.experience')} onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><AiOutlineBook /></a>
+      <a href="#portfolio" aria-label={t('nav.portfolio')} onClick={() => setActiveNav('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><MdWorkOutline /></a>
+      <a href="#contact" aria-label={t('nav.contact')} onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiMessageSquareDetail /></a>
     </nav>
   );
 };

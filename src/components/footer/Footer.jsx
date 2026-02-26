@@ -11,26 +11,26 @@ const Footer = () => {
       <a href="#" className='footer__logo'>Jonas Augusto</a>
 
       <ul className='permalinks'>
-        <li><a href="#">{t('footer-home')}</a></li>
-        <li><a href="#about">{t('footer-about')}</a></li>
-        <li><a href="#experience">{t('footer-experience')}</a></li>
-        <li><a href="#portfolio">{t('footer-portfolio')}</a></li>
-        <li><a href="#contact">{t('footer-contact')}</a></li>
+        <li><a href="#" aria-label={t('footer-home')}>{t('footer-home')}</a></li>
+        <li><a href="#about" aria-label={t('footer-about')}>{t('footer-about')}</a></li>
+        <li><a href="#experience" aria-label={t('footer-experience')}>{t('footer-experience')}</a></li>
+        <li><a href="#portfolio" aria-label={t('footer-portfolio')}>{t('footer-portfolio')}</a></li>
+        <li><a href="#contact" aria-label={t('footer-contact')}>{t('footer-contact')}</a></li>
       </ul>
 
       <div className='footer__socials'>
-        <a 
-          href="https://www.linkedin.com/in/jonasaug/" 
-          target="_blank" 
+        <a
+          href="https://www.linkedin.com/in/jonasaug/"
+          target="_blank"
           rel='noreferrer'
           aria-label="LinkedIn"
         >
           <BsLinkedin />
         </a>
 
-        <a 
-          href="https://github.com/jonasaugust1" 
-          target="_blank" 
+        <a
+          href="https://github.com/jonasaugust1"
+          target="_blank"
           rel='noreferrer'
           aria-label="GitHub"
         >
