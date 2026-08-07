@@ -64,8 +64,8 @@ i18n
                 "title": "New XP App",
                 "description": "I contributed to the development of the new XP mobile app, focusing on improving user experience and optimizing performance. Working within a multidisciplinary team, I helped implement key features such as account management, transaction history, and real-time balance updates. The app was designed to be more intuitive, customizable, and efficient."
               },
-              "jasa": {
-                "title": "Jasa Reports",
+              "jsmind": {
+                "title": "Jsmind App",
                 "description": "Innovative business management application designed to revolutionize business administration processes."
               },
               "apiComparer": {
@@ -176,8 +176,8 @@ i18n
                 "title": "Novo App XP",
                 "description": "Contribuí para o desenvolvimento do novo aplicativo mobile da XP, focando na melhoria da experiência do usuário e otimização de performance. Atuei na implementação de funcionalidades como gestão de contas, histórico de transações e atualização de saldo em tempo real."
               },
-              "jasa": {
-                "title": "Jasa Reports",
+              "jsmind": {
+                "title": "Jsmind App",
                 "description": "Aplicativo inovador de gestão empresarial desenvolvido para transformar processos administrativos."
               },
               "apiComparer": {

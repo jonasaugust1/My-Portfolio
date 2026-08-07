@@ -1,6 +1,6 @@
 import comparadorAPI from '../assets/comparadorAPI.webp';
 import cdesafetyapp from '../assets/cdesafetyapp.webp';
-import jasa from '../assets/jasa.webp';
+import jsmind from '../assets/jsmind.webp';
 import xp from '../assets/xp_n1.webp';
 
 export const projects = [
@@ -16,11 +16,12 @@ export const projects = [
   },
   {
     id: 1,
-    title: 'portfolio.projects.jasa.title',
-    description: 'portfolio.projects.jasa.description',
-    image: jasa,
+    title: 'portfolio.projects.jsmind.title',
+    description: 'portfolio.projects.jsmind.description',
+    image: jsmind, 
     technologies: ['Flutter', 'Firebase'],
-    github: ''
+    github: '',
+    playStore: 'https://play.google.com/store/apps/details?id=com.jsmind.app&hl=pt_BR',
   },
   {
     id: 2,
