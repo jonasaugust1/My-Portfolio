@@ -35,9 +35,9 @@ const Contact = () => {
         });
 
       e.target.reset();
-      alert('Message sent with success.');
+      alert(t('message-success'));
     } else {
-      alert('Please enter a valid email address.');
+      alert(t('invalid-email'));
     }
   };
 
